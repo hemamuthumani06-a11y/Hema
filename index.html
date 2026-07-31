@@ -1,365 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduSpark Academy</title>
+
+<title>My Professional Portfolio</title>
+
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
 }
+
 
 body{
-background:#f5f8ff;
-color:#333;
-line-height:1.6;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        120deg,
+        #0b132b,
+        #1c2541,
+        #3a506b
+    );
+
+    color:white;
+
 }
+
+
+/* Navigation */
 
 header{
-background:linear-gradient(135deg,#312a6e,#7c3aed);
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(10px);
+
+    padding:20px 8%;
+
 }
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
 
 .logo{
-color:white;
-font-size:30px;
-font-weight:bold;
+
+    font-size:30px;
+
+    color:#4cc9f0;
+
 }
 
-.nav-link{
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: bold;
-    transition: 0.3s;
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
 }
 
-.nav-link:hover{
-    color: #ffd700;
-}
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:bold;
-transition:.3s;
+
+    color:white;
+
+    text-decoration:none;
+
 }
+
 
 nav a:hover{
-color:#ffd700;
+
+    color:#4cc9f0;
+
 }
+
+
+
+/* Hero Section */
 
 .hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:80px 8%;
-background:linear-gradient(135deg,#280236,#7c3aed);
-color:white;
-flex-wrap:wrap;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    padding:80px 10%;
+
 }
 
-.hero-text{
-max-width:550px;
-}
+
 
 .hero h1{
-font-size:55px;
-margin-bottom:20px;
+
+    font-size:50px;
+
 }
+
+
+
+.hero span{
+
+    color:#4cc9f0;
+
+}
+
+
 
 .hero p{
-font-size:18px;
-margin-bottom:30px;
+
+    margin:20px 0;
+
+    color:#ddd;
+
+    font-size:18px;
+
 }
 
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:white;
-color:#2563eb;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-transition:.3s;
+
+
+button{
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#4cc9f0;
+
+    color:#111;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
 }
 
-.btn:hover{
-transform:scale(1.05);
-background:#ffd700;
-color:#222;
+
+
+button:hover{
+
+    background:white;
+
 }
 
-.hero-image img{
-width:400px;
-max-width:100%;
+
+
+/* Profile Photo */
+
+
+.profile{
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:5px solid #4cc9f0;
+
+    box-shadow:
+    0 0 40px rgba(76,201,240,0.6);
+
 }
 
-.section-title{
-text-align:center;
-font-size:38px;
-margin:70px 0 15px;
-color:#222;
+
+
+.profile img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
 }
 
-.subtitle{
-text-align:center;
-color:#666;
-margin-bottom:40px;
+
+
+
+
+/* Sections */
+
+
+section{
+
+    width:85%;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-padding:0 8% 70px;
+
+
+.title{
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:25px;
+
 }
+
+
+
+
+/* Skills */
+
+
+.skills{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+
+
+.skills span{
+
+    background:#2563eb;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+/* Projects */
+
+
+.projects{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+
 
 .card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
+
+    width:280px;
+
+    padding:25px;
+
+    background:
+
+    rgba(255,255,255,0.12);
+
+    border-radius:15px;
+
+    transition:0.3s;
+
 }
+
+
 
 .card:hover{
-transform:translateY(-10px);
+
+    transform:translateY(-10px);
+
 }
 
-.card h3{
-margin-bottom:15px;
-color:#2563eb;
+
+
+
+/* Contact */
+
+
+form{
+
+    max-width:500px;
+
+    margin:auto;
+
 }
 
-.features{
-background:#eef4ff;
-padding:70px 8%;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+
+
+input,textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border:none;
+
+    border-radius:10px;
+
 }
 
-.feature{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+
+textarea{
+
+    height:120px;
+
 }
 
-.feature h3{
-margin:15px 0;
-color:#2563eb;
-}
 
-.testimonials{
-padding:70px 8%;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
 
-.review{
-background:white;
-padding:25px;
-border-left:5px solid #2563eb;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
 
-.contact{
-background:linear-gradient(135deg,#240424,#7c3aed);
-color:white;
-text-align:center;
-padding:70px 20px;
-}
 
-.contact h2{
-font-size:40px;
-margin-bottom:20px;
-}
+/* Footer */
 
-.contact p{
-margin-bottom:30px;
-}
 
 footer{
-background:#3b0525;
-color:white;
-text-align:center;
-padding:20px;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#080c18;
+
 }
+
+
+
+
+/* Mobile */
+
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
 
 .hero{
-text-align:center;
-justify-content:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
 }
+
+
+nav ul{
+
+    display:none;
+
+}
+
 
 .hero h1{
-font-size:40px;
-}
 
-.hero-image{
-margin-top:40px;
-}
+    font-size:35px;
 
 }
+
+
+.profile{
+
+    margin-top:30px;
+
+}
+
+
+}
+
 
 </style>
 
+
 </head>
+
+
 
 <body>
 
-<header>
-    <div class="logo">EduSpark</div>
 
-</nav>
+<!-- Navigation -->
+
+<header>
+
 <nav>
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="features.html">Features</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+
+<h2 class="logo">
+Hema profile
+</h2>
+
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
 </nav>
 
 </header>
 
-<section class="hero">
 
-<div class="hero-text">
 
-<h1>Learn Skills For Your Future</h1>
+
+
+<!-- Home Section -->
+
+
+<div class="hero" id="home">
+
+
+<div>
+
+
+<h1>
+Hi, I'm <span>M.HEMA</span>
+</h1>
+
+
+<h2>
+Web Delevoper
+</h2>
+
 
 <p>
-Join thousands of students learning programming,
-design, business, AI, and more with expert instructors.
+I create modern websites and software solutions using latest technologies.
 </p>
 
-<a href="home.htmml" class="btn">Start Learning</a>
 
-</div>
-
-<div class="hero-image">
-
-<img src="10001 (1).png" alt="Students Learning">
+<button>
+Download CV
+</button>
 
 
 </div>
+
+
+
+
+<!-- Your Photo -->
+
+<div class="profile">
+
+<img src="hema photo.png" alt="My Photo">
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- About -->
+
+
+<section id="about">
+
+
+<h2 class="title">
+About Me
+</h2>
+
+
+<p>
+## About Me
+
+I'm an Electronics and Communication Engineering (ECE) student passionate about both hardware and software technologies. I enjoy exploring embedded systems, microcontrollers, and electronics while also developing responsive web applications using HTML, CSS, JavaScript, and Python. With a growing foundation in Java and a curiosity for emerging technologies, I'm always eager to learn, build innovative projects, and solve real-world engineering challenges.
+
+
+
+</p>
+
 
 </section>
 
-<h2 class="section-title">Popular Courses</h2>
+<!-- Skills -->
 
-<p class="subtitle">Choose from our best-selling programs</p>
 
-<section class="cards">
+<section id="skills">
 
-<div class="card">
-<h3>💻 Web Development</h3>
-<p>Master HTML, CSS, JavaScript, React, and build modern websites.</p>
-</div>
 
-<div class="card">
-<h3>🤖 Artificial Intelligence</h3>
-<p>Learn Machine Learning, Deep Learning, and Generative AI.</p>
-</div>
+<h2 class="title">
+My Skills
+</h2>
 
-<div class="card">
-<h3>📊 Data Science</h3>
-<p>Analyze data using Python, SQL, Power BI, and visualization tools.</p>
-</div>
 
-</section>
+<<section class="skills-section">
 
-<h2 class="section-title">Why Choose EduSpark?</h2>
+    <h2>My Skills</h2>
 
-<section class="features">
+    <div class="skills-wrapper">
 
-<div class="feature">
-<h3>🎓 Expert Teachers</h3>
-<p>Industry professionals with real-world experience.</p>
-</div>
+        <div class="skill-card">
+            <div class="icon">🌐</div>
+            <h3>HTML</h3>
+            <h4>85%</h4>
+            <p>Web Structure & Design</p>
+        </div>
 
-<div class="feature">
-<h3>📱 Learn Anywhere</h3>
-<p>Access courses on mobile, tablet, and desktop.</p>
-</div>
+        <div class="skill-card">
+            <div class="icon">🎨</div>
+            <h3>CSS</h3>
+            <h4>80%</h4>
+            <p>Styling & Responsive Design</p>
+        </div>
 
-<div class="feature">
-<h3>🏆 Certificates</h3>
-<p>Receive certificates after successful course completion.</p>
-</div>
+        <div class="skill-card">
+            <div class="icon">⚡</div>
+            <h3>JavaScript</h3>
+            <h4>70%</h4>
+            <p>Interactive Web Development</p>
+        </div>
 
-<div class="feature">
-<h3>💬 24/7 Support</h3>
-<p>Our team is ready to help you whenever you need it.</p>
-</div>
+        <div class="skill-card">
+            <div class="icon">🐍</div>
+            <h3>Python</h3>
+            <h4>80%</h4>
+            <p>Programming & Problem Solving</p>
+        </div>
 
-</section>
+        <div class="skill-card">
+            <div class="icon">☕</div>
+            <h3>Java</h3>
+            <h4>65%</h4>
+            <p>OOP Concepts</p>
+        </div>
 
-<h2 class="section-title">Student Reviews</h2>
+        <div class="skill-card">
+            <div class="icon">🔧</div>
+            <h3>Embedded Systems</h3>
+            <h4>70%</h4>
+            <p>Hardware & Microcontrollers</p>
+        </div>
 
-<section class="testimonials">
-
-<div class="review">
-<p>"The courses are easy to follow and helped me land my first job."</p>
-<br>
-<strong>— Sanjay</strong>
-</div>
-
-<div class="review">
-<p>"Excellent instructors and hands-on projects. Highly recommended!"</p>
-<br>
-<strong>— Kishore</strong>
-</div>
-
-<div class="review">
-<p>"The platform is beautiful, responsive, and perfect for learning."</p>
-<br>
-<strong>— priya</strong>
-</div>
+    </div>
 
 </section>
 
-<section class="contact">
 
-<h2>Ready to Start Learning?</h2>
 
-<p>Join thousands of learners and build your future today.</p>
+<!-- Projects -->
 
-<a href="#" class="btn">Enroll Now</a>
+
+        <section class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <!-- EduSpark Project Card -->
+        <div class="project-card">
+
+            <h3>🎓 EduSpark</h3>
+
+            <p>
+                EduSpark is an educational website designed to provide
+                a simple and user-friendly learning platform. This project
+                helped me improve my web development skills and create a
+                responsive website with an attractive user interface.
+            </p>
+
+            <div class="tech">
+                HTML • CSS • JavaScript
+            </div>
+
+            <a href="file:///C:/Users/Admin/Desktop/hema.html/Eduspark.html" target="_EduSpark">
+                <button>View Project</button>
+            </a>
+
+        </div>
+
+
+        <!-- Crispy Chicken Project Card -->
+        <div class="project-card">
+
+            <h3>🍗 Crispy Chicken</h3>
+
+            <p>
+                Crispy Chicken is a food website created to showcase
+                food items with an attractive design. This project helped
+                me understand frontend development, responsive layouts,
+                and user-friendly website design.
+            </p>
+
+            <div class="tech">
+                HTML • CSS • JavaScript
+            </div>
+
+            <a href="YOUR_CRISPY_CHICKEN_LINK" target="_blank">
+                <button>View Project</button>
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
+
+
+<!-- Contact -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Contact Me
+</h2>
+
+
+
+<form>
+
+
+<input type="text" placeholder="Your Name">
+
+
+<input type="email" placeholder="Your Email">
+
+
+<textarea placeholder="Your Message"></textarea>
+
+
+<button>
+Send Message
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+
+
 
 <footer>
 
-<p>© 2026 EduSpark College | Every great achievement begins with learning.</p>
+<p>
+© HEMA  | All Rights Reserved
+</p>
 
 </footer>
 
+
+
 </body>
+
 </html>
