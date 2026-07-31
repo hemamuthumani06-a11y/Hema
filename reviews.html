@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduSpark - Student Reviews</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+nav{
+    background:#570f86;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    color:#0e378f;
+}
+
+.reviews{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#0a0953;
+}
+
+.stars{
+    color:gold;
+    font-size:20px;
+    margin:10px 0;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+footer{
+    background:#34144e;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>Student Reviews</h1>
+    <p>See what our learners say about EduSpark.</p>
+</header>
+
+<section class="reviews">
+
+<div class="card">
+    <h3>Ankitha.A</h3>
+    <div class="stars">★★★★★</div>
+    <p>The Full Stack course was easy to follow and included practical projects that improved my skills.</p>
+</div>
+
+<div class="card">
+    <h3>Kishore.A</h3>
+    <div class="stars">★★★★★</div>
+    <p>Excellent instructors and well-structured lessons. I earned my certificate and landed an internship.</p>
+</div>
+
+<div class="card">
+    <h3>Anu.A</h3>
+    <div class="stars">★★★★☆</div>
+    <p>The live classes and recorded videos made learning flexible. Highly recommended.</p>
+</div>
+
+<div class="card">
+    <h3>Sitharth.A</h3>
+    <div class="stars">★★★★★</div>
+    <p>EduSpark's Data Science course helped me build confidence with real-world projects.</p>
+</div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 EduSpark. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

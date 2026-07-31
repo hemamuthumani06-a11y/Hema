@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduSpark Academy</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f8ff;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#312a6e,#7c3aed);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #ffd700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
+background:linear-gradient(135deg,#280236,#7c3aed);
+color:white;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:#ffd700;
+color:#222;
+}
+
+.hero-image img{
+width:400px;
+max-width:100%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin:70px 0 15px;
+color:#222;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:0 8% 70px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.features{
+background:#eef4ff;
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feature h3{
+margin:15px 0;
+color:#2563eb;
+}
+
+.testimonials{
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.review{
+background:white;
+padding:25px;
+border-left:5px solid #2563eb;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact{
+background:linear-gradient(135deg,#240424,#7c3aed);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact p{
+margin-bottom:30px;
+}
+
+footer{
+background:#3b0525;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero{
+text-align:center;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EduSpark</div>
+
+</nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="features.html">Features</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Learn Skills For Your Future</h1>
+
+<p>
+Join thousands of students learning programming,
+design, business, AI, and more with expert instructors.
+</p>
+
+<a href="home.htmml" class="btn">Start Learning</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="10001 (1).png" alt="Students Learning">
+
+
+</div>
+
+</section>
+
+<h2 class="section-title">Popular Courses</h2>
+
+<p class="subtitle">Choose from our best-selling programs</p>
+
+<section class="cards">
+
+<div class="card">
+<h3>💻 Web Development</h3>
+<p>Master HTML, CSS, JavaScript, React, and build modern websites.</p>
+</div>
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>Learn Machine Learning, Deep Learning, and Generative AI.</p>
+</div>
+
+<div class="card">
+<h3>📊 Data Science</h3>
+<p>Analyze data using Python, SQL, Power BI, and visualization tools.</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Why Choose EduSpark?</h2>
+
+<section class="features">
+
+<div class="feature">
+<h3>🎓 Expert Teachers</h3>
+<p>Industry professionals with real-world experience.</p>
+</div>
+
+<div class="feature">
+<h3>📱 Learn Anywhere</h3>
+<p>Access courses on mobile, tablet, and desktop.</p>
+</div>
+
+<div class="feature">
+<h3>🏆 Certificates</h3>
+<p>Receive certificates after successful course completion.</p>
+</div>
+
+<div class="feature">
+<h3>💬 24/7 Support</h3>
+<p>Our team is ready to help you whenever you need it.</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Student Reviews</h2>
+
+<section class="testimonials">
+
+<div class="review">
+<p>"The courses are easy to follow and helped me land my first job."</p>
+<br>
+<strong>— Sanjay</strong>
+</div>
+
+<div class="review">
+<p>"Excellent instructors and hands-on projects. Highly recommended!"</p>
+<br>
+<strong>— Kishore</strong>
+</div>
+
+<div class="review">
+<p>"The platform is beautiful, responsive, and perfect for learning."</p>
+<br>
+<strong>— priya</strong>
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Ready to Start Learning?</h2>
+
+<p>Join thousands of learners and build your future today.</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 EduSpark College | Every great achievement begins with learning.</p>
+
+</footer>
+
+</body>
+</html>
