@@ -1,0 +1,846 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VELLORA | Luxury Marble Atelier</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+font-family:'Segoe UI',sans-serif;
+}
+
+
+/* NAVBAR */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:22px 8%;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+.logo{
+font-size:35px;
+letter-spacing:8px;
+color:#d4af37;
+font-weight:bold;
+}
+
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+}
+
+
+nav a:hover{
+color:#d4af37;
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.85)
+),
+url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+
+.hero h1{
+font-size:75px;
+}
+
+
+.hero span{
+color:#d4af37;
+}
+
+
+.hero p{
+font-size:22px;
+margin:25px;
+}
+
+
+.btn{
+
+padding:15px 40px;
+background:#d4af37;
+color:black;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+
+
+section{
+padding:100px 8%;
+}
+
+
+
+.title{
+
+text-align:center;
+font-size:45px;
+color:#d4af37;
+margin-bottom:50px;
+
+}
+
+
+
+
+/* COLLECTION */
+
+.cards{
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+}
+
+
+.card{
+
+background:#111;
+border-radius:25px;
+overflow:hidden;
+border:1px solid #333;
+transition:.5s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-15px);
+box-shadow:0 25px 60px black;
+
+}
+
+
+
+.card img{
+
+width:100%;
+height:280px;
+object-fit:cover;
+
+}
+
+
+.card-content{
+
+padding:25px;
+
+}
+
+
+.card h2{
+
+color:#d4af37;
+
+}
+
+
+.card p{
+
+color:#aaa;
+margin-top:10px;
+
+}
+
+
+
+
+/* LUXURY */
+
+
+.luxury{
+
+background:#111;
+text-align:center;
+
+}
+
+
+.luxury h2{
+
+font-size:45px;
+color:#d4af37;
+
+}
+
+
+.luxury p{
+
+color:#ccc;
+font-size:20px;
+
+}
+
+
+
+
+
+/* STATS */
+
+.stats{
+
+display:flex;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+text-align:center;
+
+}
+
+
+.number{
+
+font-size:60px;
+color:#d4af37;
+
+}
+
+
+
+
+/* GALLERY */
+
+
+.gallery{
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+
+.gallery img{
+
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:20px;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+.contact{
+
+background:#111;
+text-align:center;
+
+}
+
+
+input,
+textarea,
+select{
+
+width:80%;
+max-width:500px;
+
+padding:15px;
+margin:10px;
+
+background:#000;
+color:white;
+
+border:1px solid #d4af37;
+
+}
+
+
+button{
+
+padding:15px 45px;
+background:#d4af37;
+border:none;
+cursor:pointer;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+
+background:#000;
+padding:50px 8%;
+
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+
+}
+
+
+footer h2{
+color:#d4af37;
+}
+
+
+footer p{
+color:#aaa;
+line-height:2;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+ÉLITE MARBLE GALLERY
+
+</div>
+
+
+<div>
+
+<a href="#home">Home</a>
+
+<a href="#collection">Collection</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>
+Luxury
+<span>Marble</span>
+<br>
+Atelier
+</h1>
+
+
+<p>
+Where Natural Stone Becomes Timeless Art
+</p>
+
+
+<a class="btn" href="#collection">
+Explore Collection
+</a>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="luxury">
+
+
+<h2>
+Every Marble Has A Story
+</h2>
+
+
+<p>
+Premium natural stones crafted for luxury villas,
+hotels and modern architecture.
+</p>
+
+
+</section>
+
+
+
+
+<section id="collection">
+
+
+<h1 class="title">
+Premium Marble Collection
+</h1>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3">
+<div class="card-content">
+<h2>Calacatta Gold</h2>
+<p>Italian white marble with golden veins.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace">
+<div class="card-content">
+<h2>Nero Portoro</h2>
+<p>Luxury black marble with gold texture.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
+<div class="card-content">
+<h2>Blue Onyx</h2>
+<p>Rare exotic stone collection.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+<div class="card-content">
+<h2>Statuario White</h2>
+<p>Classic Italian premium marble.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154">
+<div class="card-content">
+<h2>Royal Beige</h2>
+<p>Warm elegant interior marble.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+<div class="card-content">
+<h2>Carrara Classic</h2>
+<p>Timeless European marble design.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<div class="card-content">
+<h2>Green Emerald</h2>
+<p>Unique luxury green stone.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea">
+<div class="card-content">
+<h2>Crema Marfil</h2>
+<p>Premium beige Spanish marble.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617104678098-de229db51175">
+<div class="card-content">
+<h2>Red Alicante</h2>
+<p>Bold luxury statement marble.</p>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<div class="card-content">
+<h2>Arabescato</h2>
+<p>Artistic marble for modern spaces.</p>
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+
+<div class="card-content">
+
+<h2>
+Panda White Marble
+</h2>
+
+<p>
+Elegant white marble with bold black patterns for luxury interiors.
+</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3">
+
+<div class="card-content">
+
+<h2>
+Breccia Capraia
+</h2>
+
+<p>
+Luxury Italian marble with unique artistic veins for premium spaces.
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+
+<div class="stats">
+
+
+<div>
+<div class="number">25+</div>
+<p>Years Experience</p>
+</div>
+
+
+<div>
+<div class="number">500+</div>
+<p>Projects Completed</p>
+</div>
+
+
+<div>
+<div class="number">40+</div>
+<p>Countries Served</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<section id="gallery">
+
+
+<h1 class="title">
+Luxury Gallery
+</h1>
+
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="contact" id="contact">
+
+
+<h1 class="title">
+Request Consultation
+</h1>
+
+
+<input placeholder="Your Name">
+
+<input placeholder="Phone Number">
+
+<input placeholder="Email">
+
+
+<select>
+
+<option>Select Marble</option>
+<option>Calacatta Gold</option>
+<option>Nero Portoro</option>
+<option>Blue Onyx</option>
+
+</select>
+
+
+<textarea rows="5" placeholder="Your Requirement"></textarea>
+
+
+<br>
+
+
+<button>
+Send Enquiry
+</button>
+
+
+</section>
+
+<footer>
+
+<div>
+
+<h1>
+✦ ÉLITE MARBLE GALLERY
+</h1>
+
+<p>
+Luxury Marble Atelier
+</p>
+
+<p>
+"Transforming Natural Stone Into Timeless Masterpieces"
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Explore
+</h3>
+
+<a href="#">
+Home
+</a>
+
+<br>
+
+<a href="#">
+Collections
+</a>
+
+<br>
+
+<a href="#">
+Projects
+</a>
+
+<br>
+
+<a href="#">
+Contact
+</a>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+Signature Stones
+</h3>
+
+<p>
+✦ Royal Calacatta Supreme
+</p>
+
+<p>
+✦ Midnight Noir Elite
+</p>
+
+<p>
+✦ Celestial Blue Onyx
+</p>
+
+<p>
+✦ Crystal Aurora Marble
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+Visit Atelier
+</h3>
+
+<p>
+📍 Chennai, India
+</p>
+
+<p>
+📞 +91 98765 43210
+</p>
+
+<p>
+✉ contact Élite Marble@.com
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+Follow Us
+</h3>
+
+<p>
+Instagram | Facebook | Pinterest
+</p>
+
+<p>
+Luxury Interiors • Premium Stones • Modern Architecture
+</p>
+
+</div>
+
+
+</footer>
+
+
+
+<div>
+
+<p>
+© 2026 ÉLITE MARBLE GALLERY
+<br>
+Crafted With Elegance & Precision
+</p>
+
+</div>
+
+
+
+
+
+
+
+    
+</div>
+
+
+</body>
+
+</html>
